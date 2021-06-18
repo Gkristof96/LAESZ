@@ -1,0 +1,113 @@
+$dark-purple: #390050;
+$light-purple: #603196;
+$dark-text: #212121;
+$gray-text: #757575;
+$off-white: #eee;
+$white: #fff;
+
+.hero {
+  margin-top: 100px;
+  width: 100%;
+  height: 65vh;
+  background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.8) 0%,
+      rgba(255, 255, 255, 0.8) 100%
+    ),
+    url("../images/hero-bg.jpg") center no-repeat;
+  background-size: cover;
+  border-bottom: 5px solid $light-purple;
+  padding: 0 calc((100vw - 1400px) / 2);
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-column-gap: 25px;
+
+  .image-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    img {
+      height: 100%;
+    }
+  }
+
+  .text-wrapper {
+    width: calc(100% - 25px);
+    background-color: blue;
+    padding: 25px 0;
+    .hero-title {
+      font-family: "Oswald";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 50px;
+      line-height: 74px;
+      letter-spacing: 0.055em;
+
+      color: #603196;
+    }
+  }
+}
+
+.workers {
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 25px;
+
+    .right-side {
+      display: flex;
+      justify-content: center;
+      img {
+        width: 60%;
+        height: fit-content;
+        margin-top: 65px;
+      }
+    }
+  }
+}
+
+.card-container {
+  .service-card {
+    width: 100%;
+    padding: 25px;
+    background-color: #eee;
+    margin-bottom: 30px;
+    border-radius: 10px;
+
+    .title {
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 25px;
+        margin-right: 10px;
+      }
+
+      h3 {
+        font-family: "Oswald";
+        font-style: normal;
+        font-weight: 700;
+        font-size: clamp(20px, 2.5vw, 28px);
+        line-height: 41px;
+        margin: 0;
+        color: #390050;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 1450px) {
+  .hero {
+    padding: 0 25px;
+  }
+}
+
+@media screen and(max-width: 768px) {
+  .workers__content {
+    grid-template-columns: 1fr;
+
+    .right-side {
+      display: none;
+    }
+  }
+}

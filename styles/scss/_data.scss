@@ -1,0 +1,31 @@
+.contact-list {
+  list-style: none;
+  margin: 0;
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .icon {
+    margin-right: 10px;
+    font-size: 25px;
+  }
+}
+
+.info-table {
+  td {
+    padding: 5px 0;
+  }
+  h3 {
+    margin: 0;
+  }
+  span {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    color: #212121;
+  }
+}

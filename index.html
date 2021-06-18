@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <title>Lakos Ádám Evangélikus Szeretetszolgálat</title>
+  </head>
+  <body>
+    <header>
+      <div class="main-header">
+        <div class="logo-container">
+          <img
+            src="images/logo.png"
+            alt="Lakos Ádám Evangélikus Szeretetszolgálat"
+          />
+          <h1>Lakos Ádám Evangélikus Szeretetszolgálat</h1>
+        </div>
+        <div class="button-wrapper">
+          <button id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </button>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li>Főoldal</li>
+          <li class="dropdown">
+            Alapszolgáltatások <i class="fas fa-chevron-down icon"></i>
+            <ul>
+              <li>
+                <a href="/alapszolgaltatasok/etkeztetes.html">Étkeztetés</a>
+              </li>
+              <li>
+                <a href="/alapszolgaltatasok/hazisegitseg.html"
+                  >Házi segítségnyújtás</a
+                >
+              </li>
+              <li>
+                <a href="/alapszolgaltatasok/tamogatoszolgalat.html"
+                  >Támogató szolgálat</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            Idősek klubja<i class="fas fa-chevron-down icon"></i>
+            <ul>
+              <li>
+                <a href="/idosekklubja/bemutatkozas.html">Bemutatkozás</a>
+              </li>
+              <li><a href="elerhetoseg.html">Elérhetőségek</a></li>
+              <li>Házirend</li>
+              <li><a href="/idosekklubja/adatok.html">Adatok</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            Idősek otthona<i class="fas fa-chevron-down icon"></i>
+            <ul>
+              <li>
+                <a href="/idosekotthona/bemutatkozas.html">Bemutatkozás</a>
+              </li>
+              <li><a href="elerhetoseg.html">Elérhetőségek</a></li>
+              <li>Házirend</li>
+              <li><a href="/idosekotthona/adatok.html">Adatok</a></li>
+              <li>
+                <a href="/idosekotthona/felveteliinformaciok.html"
+                  >Felvételi Információk</a
+                >
+              </li>
+              <li>
+                <a href="/idosekotthona/szolgaltatas.html"
+                  >Szolgáltatások/ térítési díjak</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="kervenyek.html">Kérvények</a></li>
+          <li><a href="elerhetoseg.html">Elérhetőségek</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="side-drawer">
+      <nav class="nav">
+        <ul>
+          <li>Főoldal</li>
+          <li class="dropdown">
+            Alapszolgáltatások <i class="fas fa-chevron-down icon"></i>
+            <ul>
+              <li>
+                <a href="/alapszolgaltatasok/etkeztetes.html">Étkeztetés</a>
+              </li>
+              <li>
+                <a href="/alapszolgaltatasok/hazisegitseg.html"
+                  >Házi segítségnyújtás</a
+                >
+              </li>
+              <li>
+                <a href="/alapszolgaltatasok/tamogatoszolgalat.html"
+                  >Támogató szolgálat</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            Idősek klubja<i class="fas fa-chevron-down icon"></i>
+            <ul>
+              <li>
+                <a href="/idosekklubja/bemutatkozas.html">Bemutatkozás</a>
+              </li>
+              <li><a href="elerhetoseg.html">Elérhetőségek</a></li>
+              <li>Házirend</li>
+              <li><a href="/idosekklubja/adatok.html">Adatok</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            Idősek otthona<i class="fas fa-chevron-down icon"></i>
+            <ul>
+              <li>
+                <a href="/idosekotthona/bemutatkozas.html">Bemutatkozás</a>
+              </li>
+              <li><a href="elerhetoseg.html">Elérhetőségek</a></li>
+              <li>Házirend</li>
+              <li><a href="/idosekotthona/adatok.html">Adatok</a></li>
+              <li>
+                <a href="/idosekotthona/felveteliinformaciok.html"
+                  >Felvételi Információk</a
+                >
+              </li>
+              <li>
+                <a href="/idosekotthona/szolgaltatas.html"
+                  >Szolgáltatások/ térítési díjak</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li><a href="kervenyek.html">Kérvények</a></li>
+          <li><a href="elerhetoseg.html">Elérhetőségek</a></li>
+        </ul>
+      </nav>
+    </div>
+    <main>
+      <!--<div class="hero">
+        <div class="image-wrapper">
+          <img class="church" src="/images/templom.jpg" alt="Bobai templom" />
+          <img class="rose" src="/images/Lutherrose.png" alt="Luther rózsa" />
+        </div>
+
+        <div class="text-wrapper">
+          <h1 class="hero-title">Lakos Ádám</h1>
+          <h1 class="hero-title huge-m">Evangélikus Szeretetszolgálat</h1>
+          <div class="quote-container small">
+            <img class="quote-up" src="/images/quote-up.png" />
+            <span class="quote"
+              >Mindazok előtt, akik az egyház Urának, Jézus Krisztusnak
+              példájára figyeltek, és utat mutató szavát komolyan vették,
+              mindenkor világos volt, ma sem kétséges, hogy az egyház feladata a
+              világban nem az uralkodás, hanem a szolgálat. Az egyház pedig a
+              „test” szemléletes képében mindenkor a fő és a tagok
+              összessége.</span
+            >
+            <img class="quote-down" src="/images/quote-down.png" />
+          </div>
+        </div>
+      </div>-->
+      <section class="light-section">
+        <h2>Bemutatkozás</h2>
+        <p>
+          2011. Július 1-jén a Magyarországi Evangélikus Egyház fenntartásában
+          indult el a Lakos Ádám Evangélikus Szeretetszolgálat bobai központtal.
+        </p>
+        <p>
+          A diakóniai intézmény missziója az is, hogy a helyi gyülekezetek,
+          intézmények, közösségek egymást erősítve élő keresztény egyházként
+          kövessék Jézuskrisztus tanítását.
+        </p>
+        <p>
+          Szeretetszolgálatunk célja a kis településeken élő lakosság
+          életvitelének megkönnyítése, segítése, a rendelkezésre álló
+          eszközökkel: információnyújtással, tanácsadással, civil és önsegítő
+          szervezetek működésének támogatásával, és intézményesített
+          szolgáltatásokka
+        </p>
+        <p>
+          Jelenleg négy intézményesített alapszolgáltatással és egy otthont
+          nyújtó ellátással – két megyében közel húsz településen – segítjük az
+          idős emberek mindennapjait.
+        </p>
+        <p>
+          A diakóniai intézményhez fordulók felekezeti hovatartozás nélkül
+          kapnak segítséget.
+        </p>
+      </section>
+      <section class="darker-section">
+        <h2>Az intézmény rövid története</h2>
+        <p>
+          Krisztus Urunk tanítása alapján, hitünkből következő feladatunk, hogy
+          segítsünk a rászorulókon. Ezért hívta létre a Magyarországi
+          Evangélikus Egyház a Lakos Ádám Evangélikus Szeretetszolgálatot. A
+          szolgálat 2011. július 1-től házi segítségnyújtást és étkeztetést
+          biztosít főleg időskorúak számára. A diakóniai szolgálat, a
+          szeretetteljes szakszerű gondozás, lehetővé teszi az idősek számára a
+          biztonságos nyugodt szép időskor megélését úgy, hogy közben nem kell a
+          megszokott otthont elhagyni, elszakadni az ismerősöktől, a családtól.
+          A szolgáltatás azzal a céllal és reménységgel indult, hogy a kis
+          településeken élők is teljes körű ellátást tudjanak igénybe venni.
+        </p>
+        <p>
+          2014-ben két új szolgáltatással bővült az intézmény tevékenysége, így
+          lehetővé vált az idősek napközbeni közösségi ellátása és a súlyos
+          fogyatékosok emberek támogatása, speciális szállítása.
+        </p>
+        <p>
+          A Reformáció 500. évfordulójának évében 2017-ben intézményünk
+          szolgáltatási palettája 100 fő elhelyezésére alkalmas bentlakásos
+          ellátással gazdagodott.
+        </p>
+        <p>
+          Az intézmény jelenleg közel ötszáz gondozottnak nyújt különféle
+          szolgáltatásokat. Ellátási területe Ajka, Sümeg, Devecser, Celldömölk
+          térségre, valamint az idősek otthona vonatkozásában Veszprém megye
+          közigazgatási területeire terjed ki.
+        </p>
+        <p>
+          A Devecserben lévő otthont nyújtó intézmény lehetőséget ad arra is
+          hogy a helyi gyülekezet Istentiszteleti alkalmakat tarthasson az
+          épület kápolnájában. A lakók számára napi rendszerességgel vannak
+          áhítati alkalmak, a teljeskörű ellátás részeként.
+        </p>
+        <p>
+          Hosszú távú célunk, hogy egy komplex diakóniai szellemben működő
+          intézményhálózat részeként segítsük a fiatalok helyben maradását, és
+          az idős emberek lakókörnyezetben maradását.
+        </p>
+      </section>
+      <section class="light-section">
+        <h2 class="center-title">Szolgáltatásaink</h2>
+        <div class="card-container">
+          <div class="service-card">
+            <div class="title">
+              <img src="/images/restaurant.png" />
+              <h3>Szociális étkeztetés</h3>
+            </div>
+            <p>
+              Szociális étkeztetés keretében napi egyszeri meleg étel
+              biztosításával gondoskodunk azokról a szociálisan rászorulókról,
+              akik önmaguk, illetve eltartottjaik részére tartósan, vagy
+              átmeneti jelleggel erre nem képesek.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="title">
+              <img src="/images/stay-at-home.png" />
+              <h3>Házi segítségnyújtás</h3>
+            </div>
+            <p>
+              A házi segítségnyújtást igénybe vevő számára a saját lakóhelyén
+              biztosítunk szolgáltatást az önálló életvitelének fenntartása
+              érdekében. Gondozást és háztartási segítségnyújtást végzünk.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="title">
+              <img src="/images/handshake.png" />
+              <h3>Támogató szolgálat</h3>
+            </div>
+            <p>
+              Támogató szolgálatunk a súlyos fogyatékossággal élők, és
+              hozzátartozóik számára nyújt segítséget a lakókörnyezetükben
+              támogatva ezzel az esélyegyenlőség megvalósulását. A szolgáltatás
+              célja az önállóság segítése, a közszolgáltatókhoz való hozzáférés
+              és a lakókörnyezetben nyújtott speciális gondozás révén.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="title">
+              <img src="/images/old.png" />
+              <h3>Nappali ellátás</h3>
+            </div>
+            <p>
+              A nappali ellátás (Idősek Klubja) lehetőséget biztosít a
+              felügyelet alatti napközbeni tartózkodásra, társas kapcsolatokra,
+              közösségi programokra, valamint az alapvető higiéniai
+              szükségleteik kielégítésére. A szolgáltatást demenciában szenvedő
+              ellátottak részére is biztosítjuk, továbbá igény szerint
+              megszervezzük az ellátottak napközbeni étkeztetését.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="title">
+              <img src="/images/elderly.png" />
+              <h3>Idősek otthona</h3>
+            </div>
+            <p>
+              Az Idősek Otthona telephelyünkön személyre szabott, teljeskörű
+              ellátást, gondozást és lakhatást biztosítunk. A szolgáltatást
+              elsősorban a nyugdíjkorhatárt betöltött idős személyek számára
+              biztosítjuk. Korlátozott számban ugyan, de tudjuk fogadni az
+              Alzheimer típusú megbetegedésben szenvedőket is.
+            </p>
+          </div>
+        </div>
+        <p class="center-text center-m">
+          Mindegyik ellátás igénybevétele önkéntes kérelemre történik. A
+          szolgáltatások térítéskötelesek, tartalmukról, igénybevételéről és az
+          aktuális térítési díjról tájékozódhatnak honlapunkon.
+        </p>
+      </section>
+      <section class="darker-section workers upper-shadow large-p">
+        <div class="workers__content">
+          <div class="left-side">
+            <h2>Munkatársak</h2>
+            <p>
+              Szeretetszolgálatunk elkötelezett abban, hogy a hozzánk fordulók
+              számára az elérhető legjobb minőségű szolgáltatásokat keresztény
+              szellemben nyújtsa, ezért dolgozóink képzésére, és lelki
+              erősítésére is nagy gondot fordít az intézmény vezetése.
+            </p>
+            <p>
+              A szolgáltatásokat szakképzett munkaerővel biztosítjuk, de a
+              szakértelem mellett fontos számunka, hogy munkatársaink igazi
+              elhívott segítők legyenek.
+            </p>
+            <p>
+              Célunk, hogy a munkatársaknak a biztos megélhetés mellett,
+              megfelelő munkafeltételeket és jó munkahelyi légkört biztosítsunk.
+              A hivatásos dolgozók és a segítők is intézményeinkben,
+              környezetünkben jól érezzék magukat, így igazi társakká tudjanak
+              válni a közösségben. Társai legyenek egymásnak, és a segítésre
+              szoruló ránkbízottaknak egyaránt.
+            </p>
+          </div>
+          <div class="right-side">
+            <img src="/images/munkatars.jpg" alt="Munkatárs" />
+          </div>
+        </div>
+      </section>
+      <section class="bg-section">
+        <h2 class="center-title large-m">Hozzájárulás</h2>
+        <p class="center-text bMedium-m">
+          Amennyiben Ön is segíteni szeretne adója 1%-val hozzájárulhat a
+          Magyarországi Evangélikus Egyház segítő tevékenységéhez. Technikai
+          szám: 0035
+        </p>
+        <p class="center-text">
+          Az intézmény céljainak megvalósulását, munkáját, közvetlenül is
+          támogathatja. Minden segítséget szívesen fogadunk, legyen az önkéntes
+          munka, természetbeni vagy anyagi támogatás.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-main">
+        <div class="left-side">
+          <div class="logo-container">
+            <img
+              src="images/logo.png"
+              alt="Lakos Ádám Evangélikus Szeretetszolgálat"
+              class="logo-image"
+            />
+            <h1 class="logo-title">Lakos Ádám Evangélikus Szeretetszolgálat</h1>
+          </div>
+          <nav>
+            <a
+              href="https://www.facebook.com/Lakos-%C3%81d%C3%A1m-Evang%C3%A9likus-Szeretetszolg%C3%A1lat-562236090813529/"
+              alt="Lakos Ádám Evangélikus Szeretetszolgálat Facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://boba.lutheran.hu/" alt="Bobai gyülekezet"
+              ><i class="fas fa-globe"></i
+            ></a>
+            <a href="https://www.evangelikus.hu/" alt="Evangélikus egyház"
+              ><i class="fas fa-globe"></i
+            ></a>
+            <a href="https://diakoweb.webnode.hu/" alt="Evangélikus diakónia"
+              ><i class="fas fa-globe"></i
+            ></a>
+          </nav>
+        </div>
+        <nav class="footer-navigation">
+          <ul>
+            <h3>Oldalak</h3>
+            <li>Főoldal</li>
+            <li>Tanusítványok</li>
+            <li>Alapelvek</li>
+            <li>Kérvények</li>
+            <li>Elérhetőségek</li>
+          </ul>
+          <ul>
+            <h3>Alapszolgáltatások</h3>
+            <li>Étkeztetés</li>
+            <li>Házi segítségnyújtás</li>
+            <li>Támogató szolgálat</li>
+          </ul>
+          <ul>
+            <h3>Idősek klubja</h3>
+            <li>Bemutatkozás</li>
+            <li>Elérhetőségek</li>
+            <li>Házirend</li>
+            <li>Adatok</li>
+          </ul>
+          <ul>
+            <h3>Idősek Otthona</h3>
+            <li>Bemutatkozás</li>
+            <li>Elérhetőségek</li>
+            <li>Házirend</li>
+            <li>Adatok</li>
+            <li>Felvételi információk</li>
+            <li>Szolgáltatások, térítési díjak</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>
+          CopyRight © Lakos Ádám Evangélikus Szeretetszolgálat 2018 - 2021
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>
