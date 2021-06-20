@@ -700,6 +700,7 @@ footer .footer-bottom span {
       align-self: center;
   margin-bottom: 50px;
   color: #000000;
+  text-align: center;
 }
 
 .center-title {
@@ -785,7 +786,7 @@ footer .footer-bottom span {
 
 main {
   width: 100%;
-  margin-top: 125px;
+  margin-top: 75px;
 }
 
 main h1 {
@@ -904,6 +905,9 @@ main .upper-shadow {
   }
   .content img {
     display: none;
+  }
+  .certificate {
+    max-width: 250px;
   }
 }
 /*# sourceMappingURL=style.css.map */

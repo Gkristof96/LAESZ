@@ -94,6 +94,7 @@ $white: #fff;
     align-self: center;
     margin-bottom: 50px;
     color: #000000;
+    text-align: center;
   }
 }
 
@@ -170,7 +171,7 @@ $white: #fff;
 
 main {
   width: 100%;
-  margin-top: 125px;
+  margin-top: 75px;
 
   h1 {
     font-family: "Oswald";
@@ -289,5 +290,9 @@ main {
     img {
       display: none;
     }
+  }
+
+  .certificate {
+    max-width: 250px;
   }
 }
