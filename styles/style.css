@@ -65,8 +65,21 @@
   margin-top: 65px;
 }
 
+.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .card-container .service-card {
-  width: 100%;
+  width: 90%;
   padding: 25px;
   background-color: #eee;
   margin-bottom: 30px;
@@ -99,11 +112,14 @@
 
 @media screen and (max-width: 1450px) {
   .hero {
-    padding: 0 25px;
+    padding: 0 50px;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .hero {
+    padding: 0 25px;
+  }
   .workers__content {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -535,7 +551,7 @@ footer .footer-main .footer-navigation ul li {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
-  font-size: clamp(8px, 1.5vw, 12px);
+  font-size: clamp(12px, 1.5vw, 12px);
   line-height: 15px;
   color: #757575;
   margin-bottom: 5px;
@@ -599,6 +615,12 @@ footer .footer-bottom span {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  footer .footer-main .footer-navigation ul li {
+    display: none;
+  }
+  footer .footer-main .footer-navigation ul.open li {
+    display: block;
   }
 }
 
@@ -894,14 +916,18 @@ main .upper-shadow {
 
 @media screen and (max-width: 1450px) {
   main section {
-    padding: 75px 25px;
-    padding-bottom: 50px;
+    padding: 50px;
+    padding-top: 75px;
   }
 }
 
 @media screen and (max-width: 768px) {
   main {
     margin-top: 75px;
+  }
+  main section {
+    padding: 75px 25px;
+    padding-bottom: 50px;
   }
   .content img {
     display: none;

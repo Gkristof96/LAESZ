@@ -67,8 +67,11 @@ $white: #fff;
 }
 
 .card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .service-card {
-    width: 100%;
+    width: 90%;
     padding: 25px;
     background-color: #eee;
     margin-bottom: 30px;
@@ -98,11 +101,14 @@ $white: #fff;
 
 @media screen and(max-width: 1450px) {
   .hero {
-    padding: 0 25px;
+    padding: 0 50px;
   }
 }
 
 @media screen and(max-width: 768px) {
+  .hero {
+    padding: 0 25px;
+  }
   .workers__content {
     grid-template-columns: 1fr;
 

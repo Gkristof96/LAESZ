@@ -277,14 +277,19 @@ main {
 
 @media screen and(max-width: 1450px) {
   main section {
-    padding: 75px 25px;
-    padding-bottom: 50px;
+    padding: 50px;
+    padding-top: 75px;
   }
 }
 
 @media screen and(max-width: 768px) {
   main {
     margin-top: 75px;
+
+    section {
+      padding: 75px 25px;
+      padding-bottom: 50px;
+    }
   }
   .content {
     img {

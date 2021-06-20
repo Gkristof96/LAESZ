@@ -79,7 +79,7 @@ footer {
           font-family: Montserrat;
           font-style: normal;
           font-weight: 500;
-          font-size: clamp(8px, 1.5vw, 12px);
+          font-size: clamp(12px, 1.5vw, 12px);
           line-height: 15px;
 
           color: #757575;
@@ -137,6 +137,13 @@ footer {
           margin: 0;
           margin-bottom: 15px;
           justify-content: center;
+          li {
+            display: none;
+          }
+        }
+
+        ul.open li {
+          display: block;
         }
       }
     }
