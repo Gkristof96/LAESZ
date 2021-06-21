@@ -28,13 +28,13 @@ header {
       align-items: center;
 
       img {
-        height: 60px;
-        width: 60px;
+        height: 40px;
+        width: 40px;
       }
 
       h1 {
         font-family: "Oswald", sans-serif;
-        font-size: clamp(12px, 4vw, 24px);
+        font-size: clamp(12px, 1.5vw, 24px);
         color: $light-purple;
       }
     }
@@ -117,7 +117,7 @@ header {
         font-family: "Montserrat", sans-serif;
         font-style: normal;
         font-weight: 500;
-        font-size: 12px;
+        font-size: clamp(10px, 0.75vw, 12px);
         line-height: 15px;
         color: $off-white;
 
@@ -224,6 +224,27 @@ header {
   header .main-header,
   header nav {
     padding: 0 25px;
+
+    ul li {
+      padding: 5px 10px;
+
+      ul {
+        top: 25px;
+
+        li {
+          padding: 5px;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  header .main-header {
+    height: 45px;
+  }
+
+  header nav {
+    height: 25px;
   }
 }
 

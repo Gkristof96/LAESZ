@@ -141,7 +141,12 @@
     padding: 0 50px;
   }
   .hero .image-wrapper .church {
-    max-width: 300px;
+    max-width: 250px;
+  }
+  .hero .image-wrapper .rose {
+    width: 150px;
+    bottom: -115px;
+    right: -25px;
   }
 }
 
@@ -244,13 +249,13 @@ header .main-header .logo-container {
 }
 
 header .main-header .logo-container img {
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
 }
 
 header .main-header .logo-container h1 {
   font-family: "Oswald", sans-serif;
-  font-size: clamp(12px, 4vw, 24px);
+  font-size: clamp(12px, 1.5vw, 24px);
   color: #603196;
 }
 
@@ -355,7 +360,7 @@ header nav ul li {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: clamp(10px, 0.75vw, 12px);
   line-height: 15px;
   color: #eee;
 }
@@ -486,6 +491,25 @@ header nav ul .dropdown:hover .icon {
   header .main-header,
   header nav {
     padding: 0 25px;
+  }
+  header .main-header ul li,
+  header nav ul li {
+    padding: 5px 10px;
+  }
+  header .main-header ul li ul,
+  header nav ul li ul {
+    top: 25px;
+  }
+  header .main-header ul li ul li,
+  header nav ul li ul li {
+    padding: 5px;
+    font-size: 10px;
+  }
+  header .main-header {
+    height: 45px;
+  }
+  header nav {
+    height: 25px;
   }
 }
 
@@ -1009,6 +1033,9 @@ main .upper-shadow {
 }
 
 @media screen and (max-width: 1450px) {
+  main {
+    margin-top: 70px;
+  }
   main section {
     padding: 50px;
     padding-top: 75px;
