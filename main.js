@@ -1,13 +1,19 @@
 const hamburger = document.getElementById("hamburger");
 const drawer = document.getElementById("side-drawer");
 
+const navs = document.querySelectorAll(".footer-navlist");
+const title = document.querySelectorAll(".nav-title");
+
+const drawerNav = document.querySelectorAll(".expand");
+const dropDown = document.querySelectorAll(".side-dropdown");
+
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("open");
   drawer.classList.toggle("open");
+  dropDown.forEach((element) => {
+    element.classList.remove("open");
+  });
 });
-
-const navs = document.querySelectorAll(".footer-navlist");
-const title = document.querySelectorAll(".nav-title");
 
 title.forEach((element) => {
   element.addEventListener("click", (event) => {
@@ -16,9 +22,6 @@ title.forEach((element) => {
     navs[rank].classList.toggle("open");
   });
 });
-
-const drawerNav = document.querySelectorAll(".expand");
-const dropDown = document.querySelectorAll(".side-dropdown");
 
 drawerNav.forEach((element) => {
   element.addEventListener("click", (event) => {

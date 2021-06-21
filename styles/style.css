@@ -390,7 +390,6 @@ header nav ul li ul {
 
 header nav ul li ul li {
   width: 100%;
-  padding: 5px 25px;
   border-bottom: 1px solid rgba(238, 238, 238, 0.5);
 }
 
@@ -553,6 +552,9 @@ header nav ul .dropdown:hover .icon {
     background: #793ebc;
     width: 100%;
     border-bottom: 1px solid #390050;
+  }
+  #side-drawer nav ul ul.open li a {
+    padding: 15px 40%;
   }
   #side-drawer.open {
     -webkit-transform: translateY(460px);
