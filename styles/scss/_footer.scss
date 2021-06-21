@@ -111,13 +111,14 @@ footer {
 
 @media screen and(max-width: 1450px) {
   footer .footer-main {
-    padding: 25px;
+    padding: 50px;
   }
 }
 
 @media screen and(max-width: 768px) {
   footer {
     .footer-main {
+      padding: 25px;
       height: auto;
       grid-template-columns: 1fr;
       grid-row-gap: 25px;

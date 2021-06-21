@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@400;500&family=Oswald:wght@700&display=swap");
 .hero {
   margin-top: 100px;
+  margin-bottom: 20vh;
   width: 100%;
-  height: 65vh;
+  min-height: 65vh;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url("../images/hero-bg.jpg") center no-repeat;
   background-size: cover;
   border-bottom: 5px solid #603196;
@@ -11,31 +12,57 @@
   display: grid;
   -ms-grid-columns: 30% 70%;
       grid-template-columns: 30% 70%;
-  grid-column-gap: 25px;
+  grid-column-gap: 50px;
 }
 
 .hero .image-wrapper {
   width: 100%;
   height: 100%;
-  background-color: red;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.hero .image-wrapper img {
-  height: 100%;
+.hero .image-wrapper .church {
+  width: 100%;
+  max-width: 350px;
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hero .image-wrapper .rose {
+  position: absolute;
+  bottom: -135px;
+  right: -75px;
 }
 
 .hero .text-wrapper {
-  width: calc(100% - 25px);
-  background-color: blue;
-  padding: 25px 0;
+  width: calc(100% - 50px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 25px;
 }
 
 .hero .text-wrapper .hero-title {
   font-family: "Oswald";
   font-style: normal;
   font-weight: bold;
-  font-size: 50px;
-  line-height: 74px;
+  font-size: clamp(28px, 5vw, 50px);
   letter-spacing: 0.055em;
   color: #603196;
 }
@@ -114,11 +141,22 @@
   .hero {
     padding: 0 50px;
   }
+  .hero .image-wrapper .church {
+    max-width: 300px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .hero {
     padding: 0 25px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .hero .image-wrapper {
+    display: none;
+  }
+  .hero .text-wrapper {
+    width: 100%;
   }
   .workers__content {
     -ms-grid-columns: 1fr;
@@ -460,7 +498,7 @@ header nav ul .dropdown:hover .icon {
   #side-drawer {
     position: absolute;
     z-index: 10;
-    top: -470px;
+    top: -500px;
     display: block;
     width: 100%;
     min-height: 500px;
@@ -488,8 +526,8 @@ header nav ul .dropdown:hover .icon {
     border-bottom: 1px solid #390050;
   }
   #side-drawer.open {
-    -webkit-transform: translateY(450px);
-            transform: translateY(450px);
+    -webkit-transform: translateY(460px);
+            transform: translateY(460px);
   }
 }
 
@@ -625,12 +663,13 @@ footer .footer-bottom span {
 
 @media screen and (max-width: 1450px) {
   footer .footer-main {
-    padding: 25px;
+    padding: 50px;
   }
 }
 
 @media screen and (max-width: 768px) {
   footer .footer-main {
+    padding: 25px;
     height: auto;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -679,6 +718,7 @@ footer .footer-bottom span {
   display: grid;
   -ms-grid-rows: 25px auto 25px;
       grid-template-rows: 25px auto 25px;
+  grid-row-gap: 5px;
 }
 
 .quote-container img {
@@ -708,7 +748,7 @@ footer .footer-bottom span {
 }
 
 .small .quote {
-  font-size: 26px;
+  font-size: clamp(14px, 2.5vw, 24px);
   text-align: justify;
 }
 
@@ -964,12 +1004,23 @@ main .upper-shadow {
 }
 
 @media screen and (max-width: 768px) {
+  .quote-container {
+    -ms-grid-rows: 15px auto 15px;
+        grid-template-rows: 15px auto 15px;
+  }
+  .quote-container .quote {
+    margin: 0 20px;
+  }
   main {
     margin-top: 75px;
   }
   main section {
     padding: 75px 25px;
     padding-bottom: 50px;
+  }
+  main .quote-down,
+  main .quote-up {
+    height: 15px;
   }
   .content img {
     display: none;

@@ -21,6 +21,7 @@ $white: #fff;
   width: 100%;
   display: grid;
   grid-template-rows: 25px auto 25px;
+  grid-row-gap: 5px;
 
   img {
     height: 25px;
@@ -45,7 +46,7 @@ $white: #fff;
 .small {
   min-height: 150px;
   .quote {
-    font-size: 26px;
+    font-size: clamp(14px, 2.5vw, 24px);
     text-align: justify;
   }
 }
@@ -283,12 +284,23 @@ main {
 }
 
 @media screen and(max-width: 768px) {
+  .quote-container {
+    grid-template-rows: 15px auto 15px;
+    .quote {
+      margin: 0 20px;
+    }
+  }
+
   main {
     margin-top: 75px;
 
     section {
       padding: 75px 25px;
       padding-bottom: 50px;
+    }
+    .quote-down,
+    .quote-up {
+      height: 15px;
     }
   }
   .content {

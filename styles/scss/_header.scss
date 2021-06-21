@@ -241,7 +241,7 @@ header {
   #side-drawer {
     position: absolute;
     z-index: 10;
-    top: -470px;
+    top: -500px;
     display: block;
     width: 100%;
     min-height: 500px;
@@ -264,6 +264,6 @@ header {
   }
 
   #side-drawer.open {
-    transform: translateY(450px);
+    transform: translateY(460px);
   }
 }
