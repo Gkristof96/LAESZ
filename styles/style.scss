@@ -18,7 +18,6 @@ $white: #fff;
 }
 
 .quote-container {
-  width: 100%;
   display: grid;
   grid-template-rows: 25px auto 25px;
   grid-row-gap: 5px;
@@ -45,6 +44,7 @@ $white: #fff;
 }
 .small {
   min-height: 150px;
+  width: 100%;
   .quote {
     font-size: clamp(14px, 2.5vw, 24px);
     text-align: justify;
@@ -53,6 +53,8 @@ $white: #fff;
 
 .large {
   min-height: 100px;
+  width: fit-content;
+  align-self: center;
   .quote {
     text-align: center;
     font-size: clamp(20px, 2vw, 36px);

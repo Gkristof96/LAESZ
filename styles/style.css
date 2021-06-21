@@ -638,6 +638,11 @@ footer .footer-main .footer-navigation ul li {
   margin-bottom: 5px;
 }
 
+footer .footer-main .footer-navigation ul li a {
+  color: #757575;
+  text-decoration: none;
+}
+
 footer .footer-bottom {
   width: 100%;
   height: 50px;
@@ -714,7 +719,6 @@ footer .footer-bottom span {
 }
 
 .quote-container {
-  width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 25px auto 25px;
@@ -746,6 +750,7 @@ footer .footer-bottom span {
 
 .small {
   min-height: 150px;
+  width: 100%;
 }
 
 .small .quote {
@@ -755,6 +760,12 @@ footer .footer-bottom span {
 
 .large {
   min-height: 100px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .large .quote {

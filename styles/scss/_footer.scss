@@ -81,8 +81,12 @@ footer {
           font-weight: 500;
           font-size: clamp(12px, 1.5vw, 12px);
           line-height: 15px;
+          color: $gray-text;
 
-          color: #757575;
+          a {
+            color: $gray-text;
+            text-decoration: none;
+          }
           margin-bottom: 5px;
         }
       }
