@@ -155,6 +155,7 @@
     padding: 0 25px;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    margin-bottom: 0;
   }
   .hero .image-wrapper {
     display: none;
@@ -514,6 +515,9 @@ header nav ul .dropdown:hover .icon {
 }
 
 @media screen and (max-width: 768px) {
+  header .main-header {
+    height: 60px;
+  }
   header .main-header .button-wrapper {
     display: block;
   }
