@@ -8,18 +8,19 @@ $white: #fff;
 .hero {
   margin-bottom: 20vh;
   width: 100%;
-  min-height: 65vh;
+  height: 65vh;
+  max-height: 600px;
   background: linear-gradient(
       135deg,
       rgba(255, 255, 255, 0.8) 0%,
       rgba(255, 255, 255, 0.8) 100%
     ),
-    url("../images/hero-bg.jpg") center no-repeat;
+    url("../images/hero-bg.webp") center no-repeat;
   background-size: cover;
   border-bottom: 5px solid $light-purple;
   padding: 0 calc((100vw - 1400px) / 2);
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 400px auto;
   grid-column-gap: 50px;
 
   .image-wrapper {
@@ -31,7 +32,6 @@ $white: #fff;
 
     .church {
       width: 100%;
-      max-width: 350px;
       transform: translateY(60px);
       box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     }
@@ -48,6 +48,7 @@ $white: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     padding-top: 60px;
     padding-bottom: 25px;
     .hero-title {
@@ -116,18 +117,22 @@ $white: #fff;
 @media screen and(max-width: 1450px) {
   .hero {
     padding: 0 50px;
-
+    grid-template-columns: 275px auto;
+    height: unset;
+    min-height: 65vh;
     .image-wrapper {
-      .church {
-        max-width: 250px;
-      }
-
       .rose {
         width: 150px;
         bottom: -115px;
         right: -25px;
       }
     }
+  }
+}
+
+@media screen and(max-width: 1024px) {
+  .hero {
+    grid-template-columns: 200px auto;
   }
 }
 

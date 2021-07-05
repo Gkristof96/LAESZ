@@ -151,6 +151,30 @@ $white: #fff;
   font-weight: 500;
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  font-size: 12px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 .small-m {
   margin-bottom: 10px;
 }
@@ -262,19 +286,19 @@ main {
       rgba(255, 255, 255, 0.5) 0%,
       rgba(255, 255, 255, 0.5) 100%
     ),
-    url("../images/love.jpg") center no-repeat;
+    url("../images/love.webp") center no-repeat;
   background-size: cover;
 }
 
 .boba-map {
   min-height: 360px;
-  background: url("/images/boba.PNG") center no-repeat;
+  background: url("/images/boba.webp") center no-repeat;
   background-size: cover;
 }
 
 .devecser-map {
   min-height: 360px;
-  background: url("/images/devecser.PNG") center no-repeat;
+  background: url("/images/devecser.webp") center no-repeat;
   background-size: cover;
 }
 

@@ -86,6 +86,10 @@ footer {
           a {
             color: $gray-text;
             text-decoration: none;
+
+            &:hover {
+              color: $dark-purple;
+            }
           }
           margin-bottom: 5px;
         }
