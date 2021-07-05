@@ -320,6 +320,10 @@ main {
     }
   }
 
+  .tooltip .tooltiptext {
+    display: none;
+  }
+
   main {
     margin-top: 100px;
     section {

@@ -130,7 +130,7 @@
   font-family: "Oswald";
   font-style: normal;
   font-weight: 700;
-  font-size: clamp(20px, 2.5vw, 28px);
+  font-size: clamp(18px, 2.5vw, 28px);
   line-height: 41px;
   margin: 0;
   color: #390050;
@@ -221,6 +221,7 @@
 
 .header-container {
   position: relative;
+  width: 100%;
 }
 
 header {
@@ -398,6 +399,7 @@ header nav ul li ul {
 
 header nav ul li ul a {
   width: 100%;
+  text-decoration: none;
 }
 
 header nav ul li ul a li {
@@ -533,9 +535,9 @@ header nav ul .dropdown:hover .icon {
     display: none;
   }
   #side-drawer {
-    position: absolute;
+    position: fixed;
     z-index: 10;
-    top: -500px;
+    top: -400px;
     display: block;
     width: 100%;
     min-height: 500px;
@@ -1094,6 +1096,9 @@ main .upper-shadow {
   }
   .quote-container .quote {
     margin: 0 20px;
+  }
+  .tooltip .tooltiptext {
+    display: none;
   }
   main {
     margin-top: 100px;

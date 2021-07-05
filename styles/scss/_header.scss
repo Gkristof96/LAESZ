@@ -7,6 +7,7 @@ $white: #fff;
 
 .header-container {
   position: relative;
+  width: 100%;
 }
 header {
   width: 100%;
@@ -142,6 +143,7 @@ header {
 
           a {
             width: 100%;
+            text-decoration: none;
 
             li {
               width: 100%;
@@ -261,9 +263,9 @@ header {
   }
 
   #side-drawer {
-    position: absolute;
+    position: fixed;
     z-index: 10;
-    top: -500px;
+    top: -400px;
     display: block;
     width: 100%;
     min-height: 500px;
