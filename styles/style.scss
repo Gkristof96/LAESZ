@@ -17,6 +17,11 @@ $white: #fff;
   box-sizing: border-box;
 }
 
+.law {
+  font-size: clamp(9px, 1vw, 12px);
+  font-style: italic;
+}
+
 .quote-container {
   display: grid;
   grid-template-rows: 25px auto 25px;
@@ -27,7 +32,7 @@ $white: #fff;
   }
 
   .quote-up {
-    justify: flex-start;
+    justify-self: flex-start;
   }
   .quote-down {
     justify-self: flex-end;
@@ -253,7 +258,9 @@ main {
     padding-top: 75px;
     padding-bottom: 50px;
   }
-
+  .link {
+    padding-top: 75px;
+  }
   .large-p {
     padding-bottom: 100px;
   }
