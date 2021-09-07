@@ -880,6 +880,13 @@ footer .footer-bottom span {
   color: #390050;
 }
 
+.text-link {
+  font-family: "Montserrat", sans-serif;
+  color: #603196;
+  font-weight: 500;
+  text-decoration: none;
+}
+
 .center-text {
   text-align: center;
   font-family: Montserrat;
@@ -1024,6 +1031,15 @@ main h3 {
   font-size: clamp(14px, 1.5vw, 18px);
   line-height: 27px;
   color: #390050;
+}
+
+main h4 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-size: clamp(12px, 1vw, 16px);
+  line-height: 27px;
+  color: #390050;
+  margin-left: 15px;
 }
 
 main section {
