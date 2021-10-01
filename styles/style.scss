@@ -17,6 +17,10 @@ $white: #fff;
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 .law {
   font-size: clamp(9px, 1vw, 12px);
   font-style: italic;

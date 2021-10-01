@@ -203,6 +203,7 @@
 .info-table td {
   padding: 5px 0;
   padding-right: 5px;
+  padding-bottom: 25px;
 }
 
 .info-table h3 {
@@ -764,6 +765,10 @@ footer .footer-bottom span {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }
 
 .law {
